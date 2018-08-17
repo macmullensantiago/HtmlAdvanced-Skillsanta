@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+</head>
+
+<body>
+    <button id="play" onclick="play()">Play</button>
+    <button id="pause" onclick="pause()">Pause</button>
+    <video id="video" width="400" height="400" controls>
+        <source src="Recording.mp4" type="video/mp4">
+        <source src="Recording.mp4" type="video/mp4">
+    </video>
+
+    <audio id="audio" oncanplay="canplay()" onprogress="progressFun()"onpause="pauseFun()" controls>
+        <source src="Kalimba.mp3" type="audio/mp3">
+        <source src="Sleep Away.mp3" type="audio/mp3">
+    </audio>
+</body>
+<script src="index.js"></script>
+
+</html>
